@@ -117,4 +117,4 @@ Dynamic Programming:
 **Ayush Sharma**  
 B.Tech CSE, GLA University  
 GitHub: [Ayushshar11](https://github.com/Ayushshar11)
->>>>>>> bf2ad7c (Added Week 2 section in README)
+
