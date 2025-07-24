@@ -62,6 +62,58 @@ Dynamic Programming:
 
 ---
 
+### ✅ 📁 Week 2
+
+#### 🔹 `LCSofThreeStrings.java` — *Longest Common Subsequence of Three Strings*
+- **Problem Statement**:  
+  Given three strings `A`, `B`, and `C`, find the length of their longest common subsequence.
+
+- **Approach**:
+  - Used **3D Dynamic Programming**.
+  - Defined a 3D DP array `dp[i][j][k]` where each entry represents the LCS of the first `i` chars of `A`, `j` chars of `B`, and `k` chars of `C`.
+  - If characters match: `dp[i][j][k] = 1 + dp[i-1][j-1][k-1]`
+  - Else: `dp[i][j][k] = max(dp[i-1][j][k], dp[i][j-1][k], dp[i][j][k-1])`
+
+- **Time Complexity**: `O(m * n * o)`  
+- **Space Complexity**: `O(m * n * o)`  
+  Where `m`, `n`, and `o` are the lengths of the three strings.
+
+---
+
+#### 🔹 `SmallestNonRepresentableSum.java` — *Smallest Positive Number that Cannot be Represented as Sum*
+- **Problem Statement**:  
+  Given an array of positive integers, find the **smallest positive integer** that **cannot** be represented as the sum of elements from any subset of the array.
+
+- **Approach**:
+  - **Greedy Algorithm**.
+  - Sort the array.
+  - Initialize `res = 1`. Traverse the array:
+    - If `arr[i] > res`, then `res` is the answer.
+    - Else, update `res += arr[i]`.
+
+- **Time Complexity**: `O(n log n)` (due to sorting)  
+- **Space Complexity**: `O(1)` (no extra space used)
+
+---
+
+#### 🔹 `StepWordsFinder.java` — *Find Valid Step Words*
+- **Problem Statement**:  
+  Given a base word and a list of words, find all **step words**.  
+  A step word is one that can be formed by adding **exactly one letter** to the base word and possibly rearranging.
+
+- **Approach**:
+  - Used **character frequency arrays** (`int[26]`) to compare word and base.
+  - Valid if exactly one extra character and no shortages in base frequency.
+
+- **Time Complexity**: `O(n * k)`  
+  Where `n` = number of words and `k` = average word length  
+- **Space Complexity**: `O(1)` (only fixed-size arrays)
+
+---
+
+### 🔚 End of Week 2
+
+
 **Ayush Sharma**  
 B.Tech CSE, GLA University  
 GitHub: [Ayushshar11](https://github.com/Ayushshar11)
