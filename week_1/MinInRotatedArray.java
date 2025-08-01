@@ -1,5 +1,6 @@
 // Min in Sort rotated Array [week 1 -> Question 1]
 // Approach Binary Search 
+
 import java.util.Scanner;
 class MinInRotatedArray{
     public static void main(String[] args){
@@ -21,6 +22,7 @@ class MinInRotatedArray{
             }
         }
         System.out.println(arr[low]);
+        sc.close();
     }
 }
 

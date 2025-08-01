@@ -42,6 +42,7 @@ public class SubarraySumEqualsK {
 
         // Output result
         System.out.println(count);
+        sc.close();
     }
 }
 
@@ -81,6 +82,7 @@ public class SubarraySumEqualsK_BruteForce {
 
         // Output result
         System.out.println(count);
+
     }
 }
 */
